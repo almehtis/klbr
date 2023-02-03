@@ -10,7 +10,6 @@ function App() {
     fetch('https://api.json-generator.com/templates/8QBvRSsQuyLn/data?access_token=f36pphzkqs7tjpt08asn0tlv36xmbzzaae88fa94')
     .then(response => response.json())
     .then(usersList => {setUsers(usersList)})
-
   }, [])
 
   return (

@@ -9,7 +9,6 @@
   height: 50px;
   width: 300px;
   padding: 5px 10px 5px 10px;
-  animation: showCard .3s linear;
 }
 
 .card_inactive {
@@ -21,18 +20,4 @@
   opacity: 1;
   transform: translateY(0%);
   transition: opacity, transform .3s linear;
-}
-
-@keyframes showCard {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: .5;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
