@@ -10,3 +10,14 @@
   width: 100%;
   padding: 5px 10px 5px 10px;
 }
+
+.card_inactive {
+  opacity: .2;
+  transform: translateY(100%);
+}
+
+.card_active {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity, transform .3s linear;
+}
