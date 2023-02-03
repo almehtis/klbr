@@ -1,4 +1,4 @@
-import { LegacyRef, memo } from "react";
+import { memo } from "react";
 import { useInView } from 'react-intersection-observer'
 import cn from "classnames"
 import "./Card.css"
