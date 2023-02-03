@@ -15,7 +15,7 @@ export const Card = memo(function Card(props: {
   })
 
   return (
-    <li className={cn('card',
+    <li className={cn('card card_first-twenty',
       {
         'card_inactive': !inView && props.cardKey > 20,
         'card_active': inView && props.cardKey > 20
