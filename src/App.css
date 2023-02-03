@@ -6,11 +6,17 @@
   text-align: center;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .users-list {
   display: grid;
   grid-auto-flow: row;
+  place-content: center;
   row-gap: 30px;
-  width: 300px;
+  width: 400px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
