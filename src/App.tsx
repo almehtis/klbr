@@ -23,7 +23,6 @@ function App() {
     return
   }, [inView])
 
-
   return (
     <div className="App">
       <ul className="users-list">
