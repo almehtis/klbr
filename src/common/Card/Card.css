@@ -14,12 +14,16 @@
   width: 300px;
   padding: 5px 10px 5px 10px;
   opacity: 1;
-  transform: translateY(0%);
   margin: 0;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
   transition: opacity, transform, .5s ease-in-out;
 }
 
 .card_inactive {
   opacity: 0;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
   transform: translateY(50%);
 }
