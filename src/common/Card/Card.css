@@ -1,3 +1,7 @@
+.card-wrapper {
+  list-style-type: none;
+}
+
 .card {
   display: grid;
   grid-auto-flow: column;
@@ -9,34 +13,12 @@
   height: 50px;
   width: 300px;
   padding: 5px 10px 5px 10px;
-  list-style-type: none;
-}
-
-.card_first-twenty {
-  animation: showCard .3s linear;
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity, transform, .5s ease-in-out;
 }
 
 .card_inactive {
-  opacity: .2;
+  opacity: 0;
   transform: translateY(50%);
-}
-
-.card_active {
-  opacity: 1;
-  transform: translateY(0%);
-  transition: opacity, transform .3s linear;
-}
-
-@keyframes showCard {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: .5;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
