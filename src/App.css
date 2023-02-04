@@ -16,8 +16,8 @@
   width: 400px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .users-block {
-    width: 200px;
+@media only screen and (max-width: 600px) {
+  .users-list  {
+    width: 300px;
   }
 }
