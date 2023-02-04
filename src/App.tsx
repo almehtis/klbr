@@ -7,10 +7,7 @@ import './App.css'
 function App() {
   const [users, setUsers] = useState<User[]>([])
   const [visibleItems, setVisibleItems] = useState(21)
-
-  const {ref, inView} = useInView({
-    triggerOnce: true
-  })
+  const {ref, inView} = useInView({triggerOnce: true})
 
   useEffect(() => {
       fetch('https://api.json-generator.com/templates/8QBvRSsQuyLn/data?access_token=f36pphzkqs7tjpt08asn0tlv36xmbzzaae88fa94')
