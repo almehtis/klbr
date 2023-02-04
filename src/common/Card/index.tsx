@@ -6,7 +6,7 @@ import './Card.css'
 export const Card = memo(function Card(props: {
   className?: string;
   cardKey: number;
-  cardRef: LegacyRef<HTMLDivElement>;
+  cardRef: LegacyRef<HTMLParagraphElement>;
   userName: string;
   userSurname: string;
 }) {
@@ -21,10 +21,10 @@ export const Card = memo(function Card(props: {
       key={props.cardKey}
       ref={ref}
     >
-      <div className={cn('card', {'card_inactive': !inView}, props.className)} ref={props.cardRef}>
+      <p className={cn('card', {'card_inactive': !inView}, props.className)} ref={props.cardRef}>
         <span>Name: {props.userName}</span>
         <span>Surname: {props.userSurname}</span>
-      </div>
+      </p>
     </li>
   );
 });
