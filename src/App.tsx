@@ -9,7 +9,6 @@ function App() {
   const [visibleItems, setVisibleItems] = useState(21)
 
   const {ref, inView} = useInView({
-    threshold: 0,
     triggerOnce: true
   })
 
