@@ -18,7 +18,7 @@
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);
-  transition: opacity, transform, .5s ease-in-out;
+  transition: opacity, transform, .4s linear;
 }
 
 .card_inactive {
